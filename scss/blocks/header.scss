@@ -1,0 +1,25 @@
+.header {
+    background-color: $brown;
+    height: 125px;
+    width: 100%;
+    &__navigation {
+        @include flexmixin(center, center);
+
+        &-list {
+            display: flex;
+            column-gap: 48px;
+        }
+
+        &-link {
+            font-family: Inter;
+            font-size: 18px;
+
+            &_active {
+                font-weight: 700;
+                color: $lightbrown;
+                font-family: Inter;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,13 @@
+@mixin flexmixin ($justify_content, $align_items) {
+    display: flex;
+    justify-content: $justify_content;
+    align-items: $align_items;
+}
+
+@mixin button ($width, $height) {
+    @include flexmixin(center, center);
+    color: $white;
+    text-transform: uppercase;
+    width: $width;
+    height: $height;
+}

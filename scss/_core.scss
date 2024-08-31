@@ -9,4 +9,14 @@ body {
     height: 100%;
     font-family: Righteous;
     color: #fff;
+    background-color: $bodycolor;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
 }
