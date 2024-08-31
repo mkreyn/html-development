@@ -3,7 +3,7 @@
     height: 125px;
     width: 100%;
     &__navigation {
-        @include flexmixin(center, center);
+        display: flex;
 
         &-list {
             display: flex;
