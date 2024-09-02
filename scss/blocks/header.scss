@@ -2,12 +2,18 @@
     background-color: $brown;
     width: 100%;
     height: 125px;
+    display: flex;
 
+    &__container {
+        display: flex;
+        align-items: center;
+    }
 
     &__navigation {
         height: inherit;
         display: flex;
         align-items: center;
+        margin-right: 178px;
 
         &-list {
             display: flex;
@@ -22,6 +28,23 @@
             &_active {
                 @include fontmixin(Inter, null, 18px, $lightbrown, null);
             }
+        }
+    }
+
+    &__logo {
+        margin-right: 253px;
+    }
+
+    &__menu {
+        
+
+        &-list {
+            display: flex;
+            column-gap: 48px;
+        }
+
+        &-link {
+            @include fontmixin(Inter, null,18px, null, null);
         }
     }
 }
